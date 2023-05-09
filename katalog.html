@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Интернет-магазин часов Conquest</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+        <div class="main-header-nav-wrapper">
+          <a class="header__img" href="index.html">
+            <img width="104" height="26" src="img/logo.png" alt="Логотип сайта">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="">Каталог</a></li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="card.html">Акции</a></li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="">Доставка</a></li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link">
+                <img src="img/lu.png" width="16" height="16" alt="Поиск">
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link">
+                <img src="img/favourite.png" width="27" height="20" alt="Избранное">
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link">
+                <img src="img/kor.png" width="18" height="16" alt="Корзина">
+              </a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main class="men-watches">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Каталог</a></li>
+        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link-active">Мужские часы</a></li>
+      </ul>
+
+      <section class="catalog">
+        <div class="header-wrapper">
+          <h1 class="catalog__title">Мужские часы</h1>
+          <form action="#" method="POST">
+            <label class="catalog__sort">Сортировать по:
+              <select class="sort__form" name="sort">
+                <option value="popular">популярности</option>
+                <option value="price">цене</option>
+              </select>
+            </label>
+          </form>
+        </div>
+
+        <div class="catalog-wrapper">
+          <section class="filters">
+            <form action="#" method="POST">
+              <fieldset>
+                <legend class="filters__legend">Стоимость</legend>
+<div class="wrapper">
+        <div class="values">
+            <span id="range1">
+            </span>
+            <span> &dash; </span>
+            <span id="range2">
+            </span>
+        </div>
+        <div class="container">
+            <div class="slider-track">
+            <input type="range" min="0" max="100000" value="12000" id="slider-1" oninput="slideOne()">
+            <input type="range" min="0" max="100000" value="90000" id="slider-2" oninput="slideTwo()">
+        </div>
+        <script>window.onload = function(){
+    slideOne();
+    slideTwo();
+}
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.textContent = sliderOne.value;
+    fillColor();
+}
+function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.textContent = sliderTwo.value;
+    fillColor();
+}
+function fillColor(){
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+}</script>
+    </div>
+                  </fieldset>
+              <fieldset class="checkbox">
+                <legend class="filters__legend">Бренд</legend>
+                <label class="filters__label">
+                  <input type="checkbox" checked name="Techne">Techne</label>
+                <label class="filters__label">
+                  <input type="checkbox" checked name="Rado">Rado</label>
+                <label class="filters__label">
+                  <input type="checkbox" checked name="Bvlgary">Bvlgary</label>
+                <label class="filters__label">
+                  <input type="checkbox" name="Tissot">Tissot</label>
+                <label class="filters__label">
+                  <input type="checkbox" name="Omega">Omega</label>
+                <label class="filters__label">
+                  <input type="checkbox" name="Montblanc">Montblanc</label>
+              </fieldset>
+              <fieldset>
+                <legend class="filters__legend">Механизм</legend>
+              </fieldset>
+              <fieldset>
+                <legend class="filters__legend">Материал</legend>
+              </fieldset>
+              <fieldset>
+                <legend class="filters__legend">Цвет</legend>
+              </fieldset>
+              <input type="reset" class="btn-reset" value="Сбросить фильтр">
+            </form>
+          </section>
+<div><table style="border:none; background:none;">
+  <tr><td><a href="card.html"><img src="img/watches_1.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_2.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_3.png"></a></td></tr>
+  <tr><td><a href="card.html"><img src="img/watches_4.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_5.png"></a></td>
+    <td><a href="#"><img src="img/banner_catalog.png"></a></td></tr>
+  <tr><td><a href="card.html"><img src="img/watches_6.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_7.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_8.png"></a></td></tr>
+  <tr><td><a href="card.html"><img src="img/watches_9.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_10.png"></a></td>
+    <td><a href="card.html"><img src="img/watches_11.png"></a></td></tr>
+</table>
+
+<ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="">&lt;</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">1</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">2</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">3</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">...</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">12</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">&gt;</a></li>
+            </ul></div>
+            </div></fieldset></form></section></div></section></div></main>
+
+          </body>
+
+</body></html>
+

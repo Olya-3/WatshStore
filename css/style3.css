@@ -1,0 +1,185 @@
+body{
+	font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+header {
+	background-color: #FDfDFB;
+	margin-top: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 20px ;
+}
+.w {
+	list-style: none;
+
+}
+li {
+	display: initial;
+	vertical-align: middle;
+
+}
+.swatsh{
+	height: 805px;
+	width: 505px;
+	position: relative;
+}
+.nado {
+	display: flex;
+	justify-content: space-between;
+}
+.t{
+	position: relative;
+	top: -10px;
+	z-index: 5;
+}
+.a {
+  position: absolute;
+  z-index: 2;
+  right: 200px;
+}
+.b {
+  position: absolute;
+  z-index: 2;
+  top: 140px;
+}
+.c {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  bottom: 155px;
+}
+.sety{
+	padding-left: 50px;
+	position: relative;
+	top: -450px;
+}
+.summer{
+	position: relative;
+	top: 250px;
+	left: -200px;
+	z-index: 4;
+	font-family: Playfair Display, serif;
+}
+.btn {
+  display: inline-block;
+  padding: 26px 38px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  background: #444240;
+  text-decoration: none;
+}
+.line{
+	position: relative;
+}
+
+h1 {
+	font-size: 64px;
+	color: #1B1A17;
+
+}
+
+.switsh{
+	list-style: none;
+  display: flex;
+
+}
+.Q{
+ 
+}
+.popular__img{
+	background: url("img/Ellipse (1).png")
+}
+.popular_img{
+	background: url("img/ell.png")
+}
+
+.banner {
+  margin-bottom: 80px;
+  background: url("img/frame 1.png") no-repeat center center;
+  background-size: 100%;
+}
+
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img-col {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 52px 0 52px 80px;
+}
+
+.gallery-button {
+  align-self: flex-end;
+}
+
+
+
+.galerry-button span {
+  color: rgba(27, 26, 23, 0.82);
+  font-family: Prata, serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.banner-text-col {
+  width: 570px;
+  padding: 140px 125px 135px 70px;
+}
+
+.btn-orange {
+  background: #D4B098;
+}
+
+.main-footer {
+  margin-top: 90px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background: #444240;
+  text-decoration: none;
+}
+
+.main-footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-footer-column {
+  width: 240px;
+}
+
+.contacts-list {
+  margin-top: 0;
+}
+
+.main-footer ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.main-footer-title {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.main-footer-link {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  line-height: 14px;
+}
